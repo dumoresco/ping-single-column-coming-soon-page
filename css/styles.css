@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+input,button{
+    border: none;
+    background: none;
+}
+
+body,html,input,button{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Page-Blue: hsl(223, 100%, 88%);
+    --Light-red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .hero-header{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container .hero-header .logo{
+    margin-bottom: 40px;
+}
+
+.container .hero-header h1{
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--Gray);
+    margin-bottom: 20px;
+}
+
+.container .hero-header strong{
+    color: var(--Very-Dark-Blue);
+}
+
+.container .hero-header h2{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container .hero-header .input-group{
+    margin-top: 40px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .hero-header .input-group input{
+    width: 100%;
+    display: flex;
+    border: 1px solid var(--Gray);
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.error{
+    border: 1px solid red !important;
+}
+
+.success{
+    border: 1px solid green !important;
+}
+
+.container .hero-header .input-group button{
+    width: 100%;
+    font-weight: 700;
+    color: #FFF;
+    background-color: var(--Blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    border-radius: 30px;
+
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.container .illustration{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 30px;
+
+    max-width: 800px;
+}
+
+@media (min-width: 740px) {
+
+    .hero-header .input-group{
+        flex-direction: row !important;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .hero-header .input-group button{
+        margin: 0px !important;
+        max-width: 200px;
+    }
+    
+}
